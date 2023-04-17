@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Carlos Rodriguez"
+		]
+	},
+	"permissionacl2-desc": "Control de acceso mediante ACLs.",
+	"permissionacl2-denied": "Acceso denegado"
+}

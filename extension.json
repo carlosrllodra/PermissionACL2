@@ -1,0 +1,39 @@
+{
+	"name": "PermissionACL2",
+	"author": [
+		"Carlos Rodriguez Llodrá",
+		"..."
+	],
+	"url": "https://github.com/carlosrllodra/PermissionACL2",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"descriptionmsg": "permissionacl2-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"MessagesDirs": {
+		"PermissionACL2": [
+			"i18n"
+		]
+	},
+	"HookHandlers": {
+		"default": {
+			"class": "MediaWiki\\Extension\\PermissionACL2\\Hooks",
+			"services": [
+				"UserGroupManager",
+				"ContentLanguage"
+			]
+		}
+	},
+	"Hooks": {
+		"getUserPermissionsErrors": "default"
+	},
+	"AutoloadClasses": {
+		"MediaWiki\\Extension\\PermissionACL2\\Hooks": "src/Hooks.php"
+	},
+	"config": {
+		"PermissionACL": null,
+		"PermissionACL_Superuser": null
+	},
+	"manifest_version": 1
+}
