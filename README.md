@@ -28,33 +28,6 @@ value as a synonym of *'permit'*.
 Of course, installation procedure is also a little bit different.
 
 
-## How secure is this extension?
-
-[Security issues with authorization extensions](https://www.mediawiki.org/wiki/Security_issues_with_authorization_extensions)
-
-| What                            | Safe   |
-|:-------------------------------:|:------ |
-| **Inclusion/transclusion**      | unsafe |
-| **Preloading**                  | ?      |
-| **XML export (Special:Export)** | safe   |
-| **Atom/RSS feeds**              | ?      |
-| **Listings & search**           | unsafe |
-| **Diff & revision links**       | ?      |
-| **API**                         | ?      |
-| **Action links**                | safe   |
-| **Related rights**              | ?      |
-| **Author backdoor**             | safe   |
-| **Caching**                     | ?      |
-| **Files & Images**              | ?      |
-| **Redirects**                   | ?      |
-| **Edit Section**                | safe   |
-| **Watching Pages**              | unsafe |
-| **Other extensions**            | ?      |
-| **Raw/render**                  | ?      |
-| **Recentchanges**               | ?      |
-| **Known bugs**                  | Configuration is case-sensitive (e.g. *Special:Userlogin* is different to *Special:UserLogin*) |
-
-
 ## Installation
 
 1. Clone this repository into your MediaWiki's extensions directory:
